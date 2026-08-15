@@ -1,0 +1,10 @@
+package com.deepak.spring.springjavaconfig;
+
+import org.springframework.context.annotation.Bean;
+
+public class DaoConfig {
+	@Bean
+	public Dao dao() { // it is similar to Dao dao = new Dao();
+		return new Dao();
+	}
+}

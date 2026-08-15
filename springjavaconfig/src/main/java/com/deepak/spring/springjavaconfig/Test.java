@@ -1,0 +1,17 @@
+package com.deepak.spring.springjavaconfig;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfig.class);
+		// for may configurations we can use .register();
+		Service service= ctx.getBean(Service.class);
+		service.save();
+//		ctx.close();
+	}
+
+}

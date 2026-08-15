@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+<!--  <bean name="patient" class="com.deepak.spring.springcore.lc.xmlconfig.Patient" p:id="56" init-method="init" destroy-method="destory"/>-->
+<bean name="employee" class="com.deepak.spring.springcore.innerbeans.Employee2" p:id="78">
+<property name="address">
+<bean class="com.deepak.spring.springcore.innerbeans.Address" p:no="12" p:street="AMS" p:name="Chennai" />
+</property>
+</bean>
+	</beans> 
